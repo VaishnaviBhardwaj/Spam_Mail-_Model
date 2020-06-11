@@ -4,7 +4,7 @@
 # In[2]:import numpy as np # linear algebra
 import pandas as pd 
 import os
-df = pd.read_csv(r"C:\Users\Vaishnavi Bhardwaj\Desktop\intrp\en\src\ml\static\spam_ham_dataset.csv")
+df = pd.read_csv(r"static\spam_ham_dataset.csv")
 df.head()
 
 
