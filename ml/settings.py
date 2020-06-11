@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'sl0qkw@=(e=azxta^8iy!vi27_%)(ve6zbdal*%hqs_hw2hgdo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['boiling-headland-22082.herokuapp.com','127.0.0.1']
 
 
 # Application definition
