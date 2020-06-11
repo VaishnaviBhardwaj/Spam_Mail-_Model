@@ -1,0 +1,214 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mail Spam</title>
+</head>
+<body id="home" class="scrollspy">
+  <!-- Designing Of Navigation Bar -->
+  {% include 'navbar1.html'  %}
+  <!-- Ending Of Navigation Bar -->
+
+  <!-- Designing Of Sliders -->
+  <section class="slider">
+    <ul class="slides">
+       <li>
+        <img src="/static/img/im.png" alt="Resort2 Image">
+        <div class="caption left-align  black-text">
+          <h1>A ML Model With Django</h1>
+          <h5 class="light black-text text-lighten-3 hide-on-small-only">This is a MAchine learning model Of Spam Detection with Django Frame Work.</h5>
+        <!--   <a href="#" class="btn btn-large scrollspy">Learn More</a> -->
+        </div>
+      </li>
+      <li>
+          <img src="/static/img/an.jpg" alt="Resort2 Image">
+          <div class="caption center-align  black-text">
+            <h1>Spam Mail </h1>
+            <h5 class="light black-text text-dark-3 hide-on-small-only">Email spam, also referred to as junk email, is unsolicited messages sent in bulk by email (spamming). </h5>
+            <!-- <a href="#" class="btn btn-large scrollspy">Learn More</a> -->
+          </div>
+        </li>
+     
+      <li>
+          <img src="/static/img/cm.png" alt="Resort3 Image">
+          <div class="caption right-align black-text">
+            <h1>More</h1>
+            <h5 class="light black-text text-lighten-3 hide-on-small-only"> IN this model we are perdicting that the mail is Spam or Ham Using RandomForestClassifier. </h5>
+            <!-- <a href="#" class="btn btn-large scrollspy">Learn More</a> -->
+          </div>
+        </li>
+    </ul>
+  </section>
+  <!-- Ending Of Slider -->
+
+  <!-- Search Section -->
+  <section class="section section-search center  black  white-text scrollspy" id="search">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Spam mail</h3>
+          <div class="input-field">
+            <input class="white grey-text autocomplete" id="autocomplete-input" placeholder="Spam mail , ham mail..." type="text"> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Ending Of Search Section -->
+<section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+              
+              <h4>Ham mail</h4>
+              <p>this is a follow up to the note i gave you on monday , 4 / 3 / 00 { preliminary
+                  flow data provided by daren } .
+                  please override pop ' s daily volume { presently zero } to reflect daily
+                  activity you can obtain from gas control .
+                  this change is needed asap for economics purposes .</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+              
+              <h4>Spam mail</h4>
+              <p> photoshop , windows , office . cheap . main trending
+                        abasements darer prudently fortuitous undergone
+                        lighthearted charm orinoco taster
+                        railroad affluent pornographic cuvier
+                        irvin parkhouse blameworthy chlorophyll
+                        robed diagrammatic fogarty clears bayda</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+              <h4>Ham mail</h4>
+              <p>Subject: re : indian springs
+this deal is to book the teco pvr revenue . it is my understanding that teco
+just sends us a check , i haven ' t received an answer as to whether there is a
+predermined price associated with this deal or if teco just lets us know what
+we are giving </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Starting Of Section Icons -->
+  <section class="section section-contact center scrollspy" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel black white-text">
+            <i class="material-icons large">email</i>
+            <h4>Contact Us For More</h4>
+            <p>Email spam, also referred to as junk email, is unsolicited messages sent in bulk by email (spamming).</p>
+          </div>
+          </div>
+        <div class="col s12 m6 ">
+          <form method="Post" action="SpamModel"> 
+           <div class="card-panel grey lighten-3">
+                  <h5>Please Fill Out This Form</h5>
+                <div class="input-field">
+                    <input type="text" placeholder="Name" id="name" name="name">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="email" placeholder="Email" id="email" name="email">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" placeholder="Phone" id="Phone" name="phone">
+                    <label for="Phone">Phone</label>
+                  </div>
+                  <div class="input-field">
+                    <textarea name="message" id="message" cols="30" rows="20" class="materialize-textarea"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <button class="btn btn-dark" value="Submit" type="submit">Submit</button>
+                </div>
+            
+          </form>
+
+                
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Ending Of Contact Section -->
+
+  <!-- Starting Of Footer Design -->
+  <<!-- section class="section section-footer center  teal dark white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5>Created By Vaishnavi</h5>
+          <p>L<i class="material-icons">favorite</i>ve from India</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  <!-- Ending Of Popular Sections -->
+
+  <!-- Starting Of Follow Sections -->
+  <section class="section section-follow black center white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Follow Vaish</h4>
+          <p>Follow us on Social Media</p>
+          <a href="https://facebook.com" class="white-text"><i class="fab fa-facebook fa-4x"></i></a>
+          <a href="https://facebook.com" class="white-text"><i class="fab fa-twitter fa-4x"></i></a>
+          <a href="https://facebook.com" class="white-text"><i class="fab fa-linkedin fa-4x"></i></a>
+          <a href="https://facebook.com" class="white-text"><i class="fab fa-google-plus fa-4x"></i></a>
+          <a href="https://facebook.com" class="white-text"><i class="fab fa-pinterest fa-4x"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Ending Of Follow Sections -->
+
+  <!-- Starting Of Photo Gallery -->
+  
+  <!-- Ending Of Photo Gallery -->
+
+  <!-- Starting Of Contact Section -->
+  
+  <!-- Ending Of Footer Design -->
+  <!--Import jQuery before materialize.js-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+ $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.slider').slider({
+      height:500,
+      interval:6000,
+      indicators : false,
+      transition:500,
+    });
+    $('.autocomplete').autocomplete({
+      data: {
+        "Goa":null,
+        "Spiti Valley":null,
+        "Leh Ladakh":null
+      },
+    });
+    $('.materialboxed').materialbox();
+    $('.scrollspy').scrollSpy();
+  });
+  </script>
+  
+</body>
+
+</html>
