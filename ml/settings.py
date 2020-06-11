@@ -25,7 +25,7 @@ SECRET_KEY = 'sl0qkw@=(e=azxta^8iy!vi27_%)(ve6zbdal*%hqs_hw2hgdo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['boiling-headland-22082.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['spam-2112.herokuapp.com','127.0.0.1']
 
 
 # Application definition
