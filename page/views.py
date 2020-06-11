@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import HTTP,render
 from django.views.decorators.csrf import csrf_exempt
 from .spam_model import is_spam
 from django.contrib import messages
